@@ -112,7 +112,10 @@ class AdminController extends Controller
             return redirect("/show");
         }
    }
-
+   public function add()
+   {
+        return "hi";
+   }
    public function description($id)
    {
         $drug=Drug::findorfail($id);
